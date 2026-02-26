@@ -1,7 +1,5 @@
 # Cloud Foundry Runtime
 
-**Plan Name**: MEMORY
-
 **Manual Setup**: https://help.sap.com/docs/cf-runtime/cloud-foundry-runtime/initial-setup?locale=en-US
 
 **Using Booster**: https://YOUR_SAP_BTP_GLOBAL_ACCOUNT/booster/8499b227-1498-473a-b24a-1f0968f93459

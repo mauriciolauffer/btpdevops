@@ -1,7 +1,5 @@
 # SAP Business Application Studio
 
-**Plan Name**: standard-edition
-
 **Manual Setup**: https://help.sap.com/docs/bas/sap-business-application-studio/getting-started
 
 **Using Booster**: https://YOUR_SAP_BTP_GLOBAL_ACCOUNT/booster/bas-ptk
