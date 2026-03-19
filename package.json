@@ -21,7 +21,7 @@
     "@sap/cds-dk": "^9.7.2",
     "@sap/eslint-plugin-cds": "^4.1.2",
     "eslint": "^9.39.3",
-    "mbt": "^1.2.43",
+    "mbt": "^1.2.44",
     "oxfmt": "^0.41.0"
   },
   "cds": {
