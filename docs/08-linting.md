@@ -10,7 +10,7 @@ In the terminal, execute $ `cds add lint` to add ESLint and the ESLint plugin fo
 
 Now, you need to create the configuration file where the ESLint rules can be configured. Rules can be imported and reused from shared projects.
 
-Create the file `eslint.config.mjs` in the root folder.
+The file `eslint.config.mjs` should have been created by the previous command, it should be located in the root folder. If not, manually create it. The file content should look like the following:
 
 ```js
 import { defineConfig } from "eslint/config";
@@ -24,7 +24,7 @@ export default defineConfig([
 ]);
 ```
 
-With the configuration created, you can execute ESLint to check your codebase.
+With the configuration created, you can execute ESLint to check your codebase. Make sure to execute $ `npm install` to install any new dependencies added by the previous command.
 
 In the terminal, execute $ `cds lint`. You should see a warning message saying a variable was declared, but never used. This rule could be configured to throw an error rather than just a warning. It could also be completely turned off.
 

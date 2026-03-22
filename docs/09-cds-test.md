@@ -4,7 +4,7 @@ The `cds.test` library provides best practice utils for writing tests for CAP No
 
 You can use the function `cds.test()` to easily launch and test a CAP server. You can test all services programmatically using the respective [Node.js Service APIs](https://cap.cloud.sap/docs/node.js/core-services), or, test all HTTP APIs directly calling the endpoints which better represents real usage of your apps.
 
-To add initial template tests based on the services defined in the project, you can execute $ `cds add test` in the terminal. It will install the required dependencies and create 1 test file per service definition.
+To add initial template tests based on the services defined in the project, you can execute $ `cds add test` in the terminal. It will add the required dependencies and create 1 test file per service definition. Make sure to execute $ `npm install` to install any new dependencies added by the previous command.
 
 ![alt text](images/cds-test/image-3.png)
 
@@ -84,4 +84,3 @@ The `Build` process will only successfully complete when `linting` doesn't retur
 Now, you should fix the tests in the codebase, commit them and wait for the CI/CD pipeline to be triggered again.
 
 Once the `Build` process is complete, a new transport requested will be created in the `Cloud Transport Management Service`.
-
