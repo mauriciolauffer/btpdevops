@@ -43,7 +43,7 @@ Click on the `+` (Add) button next to `npm Script`.
 
 Choose `+` (Add) to add an `npm Script`.
 
-In the `npm Script` text field, enter the name of the test script from the `scripts` section to be executed.
+In the `npm Script` text field, enter the name of the test script from the `scripts` section to be executed. In this case, `test` is the script name.
 
 ![alt text](image-13.png)
 
@@ -79,8 +79,34 @@ The changes will be sent to GitHub and it will trigger the CI/CD pipeline config
 
 Back to the SAP Continuous Integration and Delivery service, the `Build` process should fail because the `Additional Unit Tests` stage has failed. The failure is due to the automated tests not passing.
 
+![alt text](<Screenshot 2026-03-22 171803.png>)
+
+![alt text](<Screenshot 2026-03-22 171952.png>)
+
 The `Build` process will only successfully complete when `linting` doesn't return any errors and the `automated tests` are passing.
 
-Now, you should fix the tests in the codebase, commit them and wait for the CI/CD pipeline to be triggered again.
+Now, you should fix the tests in the codebase.
+
+Go back to Bussiness Application Studio and fix the test files in the `test` folder. You can execute the tests from the terminal again $ `npm test` at any time.
+
+> **Note**: You can copy the correct tests from [AdminService.test.js](https://github.com/mauriciolauffer/btpdevops/blob/testpass/test/AdminService.test.js) and [CatalogService.test.js](https://github.com/mauriciolauffer/btpdevops/blob/testpass/test/CatalogService.test.js).
+
+Commit the changes and wait for the CI/CD pipeline to be triggered again. Now, it will pass the tests and complete the process.
+
+![alt text](<Screenshot 2026-03-22 173243.png>)
 
 Once the `Build` process is complete, a new transport requested will be created in the `Cloud Transport Management Service`.
+
+In the `Cloud Transport Management Service`, Select `Transport Requests` from the menu. Select the recently created `Transport Request` to see its details.
+
+![alt text](image-20.png)
+
+![alt text](image-21.png)
+
+Select the target system node, and click on the button `Go to Node's Import Queue`.
+
+![alt text](image-22.png)
+
+The `Transport Request` is ready to be imported in the target system. Select it and click on the `Import Selected` button.
+
+With that, we get to the end of the workshop!
